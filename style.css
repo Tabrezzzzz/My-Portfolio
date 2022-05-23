@@ -55,46 +55,45 @@ section {
     width: 50px;
 
 }
-.container-hover{
-    width:280px !important;
-    margin:0 20px;
-    transition-duration: 0.7s;
-    padding-top: 10px;
+.arrow{
+    display:none;
 }
-.container-hover:hover{
-    background-color: #0d6efd;
-    border-radius: 25px;
-    box-shadow: 5px 12px 20px 8px rgba(24, 24, 24, 0.473) ;
-    margin-top: -15px;
+.hover-container{
+    padding-top: 10px ;
+    animation-name : pulse;
+    animation-duration: 0.5s;
+    width: 300px !important;
+    margin-left: 20px !important;
+ 
+
 }
-.container-hover:hover .icon{
-    font-size:45px !important;
-    color: white !important;
-    display: flex !important;
+.hover-container:hover  {
+background-color: #0d6efd;
+color:white !important;
+box-shadow: 8px 7px 20px 7px rgba(20, 20, 20, 0.342);
+transition-duration: 0.5s;
+border-radius: 20px;
+margin-top:-25px;
+}
+.hover-container:hover .icon {
+    color:white !important;
+    transform: scale(0.8);
+    text-align: center !important;
+}
+.hover-container:hover .container-heading {
+    color:white !important;
+}
+.hover-container:hover .container-para {
+    color:rgb(233, 233, 233) !important;
+    
 }
 
-.container-hover:hover .container-title{
-    color:white;
-}
-.container-hover:hover .container-paragraph{
-    color:rgb(228, 228, 228) !important;
-}
-.input-style{
-    height:60px;
-    border-color: #ebebeb !important;
-}
-.input-style2{
-    height:60px;
-    border-color: #ebebeb !important;
-    width: 400px !important;
-}
-.input-style::placeholder{
-    color: #ebebeb !important;
-}
-.textarea-style{
-    height:150px;
-    border-color: #ebebeb !important;
-}
-.textarea-style::placeholder{
-    color: #ebebeb !important;
+@keyframes pulse {
+    
+    0%   {background-color: red !important;}
+  25%  {background-color: yellow !important;}
+  50%  {background-color: blue !important;}
+  100% {background-color: green !important;}
+   
+    
 }
