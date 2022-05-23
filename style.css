@@ -79,3 +79,22 @@ section {
 .container-hover:hover .container-paragraph{
     color:rgb(228, 228, 228) !important;
 }
+.input-style{
+    height:60px;
+    border-color: #ebebeb !important;
+}
+.input-style2{
+    height:60px;
+    border-color: #ebebeb !important;
+    width: 400px !important;
+}
+.input-style::placeholder{
+    color: #ebebeb !important;
+}
+.textarea-style{
+    height:150px;
+    border-color: #ebebeb !important;
+}
+.textarea-style::placeholder{
+    color: #ebebeb !important;
+}
