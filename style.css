@@ -29,9 +29,35 @@ font-family: 'Inter', sans-serif;
 .rock-salt{
     font-family: 'Rock Salt', cursive;
 }
-section {
-    padding:15vh;
+@media screen and (min-width:700px) {
+    section {
+        padding:15vh;
+    }
+    
 }
+section{
+    padding:20px;
+}
+
+@media screen and (max-width:768px) {
+    .image{
+        height: 250px;  
+        width: 250px;
+    }
+    
+}
+@media screen and (min-width:768px) {
+  
+    .image{
+            height: 500px;  
+            width: 500px;
+        }
+    
+}
+
+    
+
+
 .text-justify{
     text-align: justify;
     line-height: 30px;
@@ -97,3 +123,24 @@ margin-top:-25px;
    
     
 }
+@media screen and (min-width:768px) {
+    .display-none{
+        display: flex;
+    }    
+    
+}
+@media screen and (max-width:768px) {
+    .display-none{
+        display: none;
+    }    
+    
+}
+@media screen and (max-width:768px) {
+    .pe-55{
+        padding: 0 !important;
+    }  
+    
+}
+/* .pe-55{
+    padding-right: 3rem;
+} */
